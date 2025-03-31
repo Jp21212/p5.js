@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#art-container {
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid white;
+}
