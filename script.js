@@ -12,7 +12,7 @@ function setup() {
 
 // Main draw function
 function draw() {
-    // Dynamic background color based on the current index
+    // Background color based on the current index
     background(bgColors[bgColorIndex]);
 
     // Loop through shapes array and display each shape
@@ -81,7 +81,7 @@ class RandomShape {
         this.scaleFactor += this.scaleSpeed;
         
         if (this.scaleFactor > 2 || this.scaleFactor < 0.5) {
-            this.scaleSpeed *= -1; // Reverse scaling direction when it exceeds the limits
+            this.scaleSpeed *= -1; // Reverse scaling direction when there are too many shapes
         }
     }
 
